@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-final Color primaryColor = Colors.orange;
+final Color primaryColor = Color.fromARGB(255, 255, 106, 0);
 final TargetPlatform platform = TargetPlatform.android;
 
 void main() {
@@ -117,8 +117,8 @@ class _SunflowerState extends State<Sunflower> {
               ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: 300),
                 child: Slider.adaptive(
-                  min: 20,
-                  max: 2000,
+                  min: 10,
+                  max: 2500,
                   value: seeds,
                   onChanged: (newValue) {
                     setState(() {
